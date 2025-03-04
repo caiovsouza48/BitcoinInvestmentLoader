@@ -21,12 +21,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE3433A72D77A41800AF75E9 /* BitcoinInvestmentLoader.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = BitcoinInvestmentLoader.xctestplan; path = ../BitcoinInvestmentLoader.xctestplan; sourceTree = "<group>"; };
 		DE6628B32D7765CE006C4F2B /* BitcoinInvestmentLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BitcoinInvestmentLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6628BB2D7765CE006C4F2B /* BitcoinInvestmentLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinInvestmentLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DE6628C32D7765CE006C4F2B /* Exceptions for "BitcoinInvestmentLoader" folder in "BitcoinInvestmentLoader" target */ = {
+		DE6628C32D7765CE006C4F2B /* Exceptions for "Sources" folder in "BitcoinInvestmentLoader" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				BitcoinInvestmentLoader.h,
@@ -36,17 +37,17 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DE6628B52D7765CE006C4F2B /* BitcoinInvestmentLoader */ = {
+		DE6628B52D7765CE006C4F2B /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				DE6628C32D7765CE006C4F2B /* Exceptions for "BitcoinInvestmentLoader" folder in "BitcoinInvestmentLoader" target */,
+				DE6628C32D7765CE006C4F2B /* Exceptions for "Sources" folder in "BitcoinInvestmentLoader" target */,
 			);
-			path = BitcoinInvestmentLoader;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		DE6628BF2D7765CE006C4F2B /* BitcoinInvestmentLoaderTests */ = {
+		DE6628BF2D7765CE006C4F2B /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BitcoinInvestmentLoaderTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -73,8 +74,9 @@
 		DE6628A92D7765CE006C4F2B = {
 			isa = PBXGroup;
 			children = (
-				DE6628B52D7765CE006C4F2B /* BitcoinInvestmentLoader */,
-				DE6628BF2D7765CE006C4F2B /* BitcoinInvestmentLoaderTests */,
+				DE3433A72D77A41800AF75E9 /* BitcoinInvestmentLoader.xctestplan */,
+				DE6628B52D7765CE006C4F2B /* Sources */,
+				DE6628BF2D7765CE006C4F2B /* Tests */,
 				DE6628B42D7765CE006C4F2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,7 +117,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DE6628B52D7765CE006C4F2B /* BitcoinInvestmentLoader */,
+				DE6628B52D7765CE006C4F2B /* Sources */,
 			);
 			name = BitcoinInvestmentLoader;
 			packageProductDependencies = (
@@ -138,7 +140,7 @@
 				DE6628BE2D7765CE006C4F2B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DE6628BF2D7765CE006C4F2B /* BitcoinInvestmentLoaderTests */,
+				DE6628BF2D7765CE006C4F2B /* Tests */,
 			);
 			name = BitcoinInvestmentLoaderTests;
 			packageProductDependencies = (

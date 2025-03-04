@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol BitcoinInvestmentLoader {
+    func load() async throws -> [BitcoinInvestment]
+}
