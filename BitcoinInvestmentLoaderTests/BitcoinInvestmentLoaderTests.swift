@@ -8,8 +8,6 @@
 import XCTest
 @testable import BitcoinInvestmentLoader
 
-
-
 final class BitcoinInvestmentLoaderTests: XCTestCase {
 
     override func setUpWithError() throws {
