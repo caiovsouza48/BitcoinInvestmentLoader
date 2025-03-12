@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct BitcoinInvestment {
+public struct BitcoinInvestment: Equatable {
     public let amount: Decimal
     public let bitcoinPriceAtPurchase: Decimal
     public let date: Date
