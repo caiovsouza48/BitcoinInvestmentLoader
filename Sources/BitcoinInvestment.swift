@@ -7,13 +7,16 @@
 
 import Foundation
 
-public struct BitcoinInvestment: Equatable {
+public struct BitcoinInvestment: Identifiable, Equatable {
+    
+    public let id: UUID
     public let amount: Decimal
     public let bitcoinPriceAtPurchase: Decimal
     public let date: Date
     public let note: String?
     
-    public init(amount: Decimal, bitcoinPriceAtPurchase: Decimal, date: Date, note: String?) {
+    public init(id: UUID, amount: Decimal, bitcoinPriceAtPurchase: Decimal, date: Date, note: String?) {
+        self.id = id
         self.amount = amount
         self.bitcoinPriceAtPurchase = bitcoinPriceAtPurchase
         self.date = date
