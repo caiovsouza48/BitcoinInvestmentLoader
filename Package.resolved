@@ -4,7 +4,7 @@
     {
       "identity" : "swift-money",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/connor-ricks/swift-money",
+      "location" : "https://github.com/caiovsouza48/swift-money",
       "state" : {
         "revision" : "4a50b5000a4f0e13668e1f9e7611f1cca75d1711",
         "version" : "0.2.2"
