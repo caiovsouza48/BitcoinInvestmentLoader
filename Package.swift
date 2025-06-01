@@ -16,7 +16,7 @@ let package = Package(
             targets: ["BitcoinInvestmentLoader"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/caiovsouza48/swift-money", from: "0.2.2")
+        .package(url: "https://github.com/caiovsouza48/swift-money", branch: "main")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
