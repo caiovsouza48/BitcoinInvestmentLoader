@@ -10,6 +10,12 @@ import Money
 
 public struct BitcoinInvestment: Identifiable, Equatable {
     
+    public enum InvestmentError: LocalizedError {
+        case currenciesNotEqual
+        
+        public var errorDescription: String? { "Currencies must be the same" }
+    }
+    
     public let id: UUID
     public let amount: MonetaryValue
     public let bitcoinPriceAtPurchase: MonetaryValue
@@ -18,7 +24,7 @@ public struct BitcoinInvestment: Identifiable, Equatable {
     
     public init(id: UUID, amount: MonetaryValue, bitcoinPriceAtPurchase: MonetaryValue, purchaseDate: Date, note: String?) throws {
         guard amount.currency.isEqual(to: bitcoinPriceAtPurchase.currency) else {
-            throw NSError(domain: "BitcoinInvestmentLoader", code: 1001, userInfo: [NSLocalizedDescriptionKey : "Currencies must be the same"])
+            throw InvestmentError.currenciesNotEqual
         }
         self.id = id
         self.amount = amount
