@@ -11,11 +11,18 @@ let package = Package(
             name: "BitcoinInvestmentLoader",
             targets: ["BitcoinInvestmentLoader"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/connor-ricks/swift-money", from: "0.2.2")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "BitcoinInvestmentLoader"),
+            name: "BitcoinInvestmentLoader",
+            dependencies: [
+                .product(name: "Money", package: "swift-money")
+            ]
+        ),
         .testTarget(
             name: "BitcoinInvestmentLoaderTests",
             dependencies: ["BitcoinInvestmentLoader"]
