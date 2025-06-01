@@ -24,7 +24,7 @@ public struct BitcoinInvestment: Identifiable, Equatable {
     public let createdAt: Date
     public let modifiedAt: Date?
     
-    init(id: UUID,
+    public init(id: UUID,
          amount: MonetaryValue,
          bitcoinPriceAtPurchase: MonetaryValue,
          purchaseDate: Date,
