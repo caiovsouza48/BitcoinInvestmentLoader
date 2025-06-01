@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE53D59E2DEBBF840096D3F5 /* Money in Frameworks */ = {isa = PBXBuildFile; productRef = DE53D59D2DEBBF840096D3F5 /* Money */; };
 		DE6628BC2D7765CE006C4F2B /* BitcoinInvestmentLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6628B32D7765CE006C4F2B /* BitcoinInvestmentLoader.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE53D59E2DEBBF840096D3F5 /* Money in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +123,7 @@
 			);
 			name = BitcoinInvestmentLoader;
 			packageProductDependencies = (
+				DE53D59D2DEBBF840096D3F5 /* Money */,
 			);
 			productName = BitcoinInvestmentLoader;
 			productReference = DE6628B32D7765CE006C4F2B /* BitcoinInvestmentLoader.framework */;
@@ -177,6 +180,9 @@
 			);
 			mainGroup = DE6628A92D7765CE006C4F2B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DE53D59C2DEBBF840096D3F5 /* XCRemoteSwiftPackageReference "swift-money" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DE6628B42D7765CE006C4F2B /* Products */;
 			projectDirPath = "";
@@ -509,6 +515,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE53D59C2DEBBF840096D3F5 /* XCRemoteSwiftPackageReference "swift-money" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/caiovsouza48/swift-money.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE53D59D2DEBBF840096D3F5 /* Money */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE53D59C2DEBBF840096D3F5 /* XCRemoteSwiftPackageReference "swift-money" */;
+			productName = Money;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE6628AA2D7765CE006C4F2B /* Project object */;
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "f5b6389869928dec724d24f4332e946f80a05aaee46ae34dfb21fae769ca132a",
+  "pins" : [
+    {
+      "identity" : "swift-money",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/caiovsouza48/swift-money.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "94af03cb53e0cedb53234d654fde94e98191dc9f"
+      }
+    }
+  ],
+  "version" : 3
+}
